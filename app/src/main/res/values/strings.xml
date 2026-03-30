@@ -81,5 +81,54 @@
     <string name="mbti_question_59">You struggle with deadlines.</string>
     <string name="mbti_question_60">You feel confident that things will work out for you.</string>
 
+    <!-- LIST OF TYPE (NAME+NICKNAME NAME+DESCRIPTION) -->
+    <string name="mbti_type_intj_nickname">Architect</string>
+    <string name="mbti_type_intj_description">Imaginative and strategic thinkers, with a plan for everything.</string>
+
+    <string name="mbti_type_intp_nickname">Logician</string>
+    <string name="mbti_type_intp_description">Innovative inventors with an unquenchable thirst for knowledge.</string>
+
+    <string name="mbti_type_entj_nickname">Commander</string>
+    <string name="mbti_type_entj_description">Bold, imaginative and strong-willed leaders, always finding a way – or making one.</string>
+
+    <string name="mbti_type_entp_nickname">Debater</string>
+    <string name="mbti_type_entp_description">Smart and curious thinkers who cannot resist an intellectual challenge.</string>
+
+    <string name="mbti_type_infj_nickname">Advocate</string>
+    <string name="mbti_type_infj_description">Quiet and mystical, yet very inspiring and tireless idealists.</string>
+
+    <string name="mbti_type_infp_nickname">Mediator</string>
+    <string name="mbti_type_infp_description">Poetic, kind and altruistic people, always eager to help a good cause.</string>
+
+    <string name="mbti_type_enfj_nickname">Protagonist</string>
+    <string name="mbti_type_enfj_description">Charismatic and inspiring leaders, able to mesmerize their listeners.</string>
+
+    <string name="mbti_type_enfp_nickname">Campaigner</string>
+    <string name="mbti_type_enfp_description">Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.</string>
+
+    <string name="mbti_type_istj_nickname">Logistician</string>
+    <string name="mbti_type_istj_description">Practical and fact-minded individuals, whose reliability cannot be doubted.</string>
+
+    <string name="mbti_type_isfj_nickname">Defender</string>
+    <string name="mbti_type_isfj_description">Very dedicated and warm protectors, always ready to defend their loved ones.</string>
+
+    <string name="mbti_type_estj_nickname">Executive</string>
+    <string name="mbti_type_estj_description">Excellent administrators, unsurpassed at managing things – or people.</string>
+
+    <string name="mbti_type_esfj_nickname">Consul</string>
+    <string name="mbti_type_esfj_description">Extraordinarily caring, social and popular people, always eager to help.</string>
+
+    <string name="mbti_type_istp_nickname">Virtuoso</string>
+    <string name="mbti_type_istp_description">Bold and practical experimenters, masters of all kinds of tools.</string>
+
+    <string name="mbti_type_isfp_nickname">Adventurer</string>
+    <string name="mbti_type_isfp_description">Flexible and charming artists, always ready to explore and experience something new.</string>
+
+    <string name="mbti_type_estp_nickname">Entrepreneur</string>
+    <string name="mbti_type_estp_description">Smart, energetic and very perceptive people, who truly enjoy living on the edge.</string>
+
+    <string name="mbti_type_esfp_nickname">Entertainer</string>
+    <string name="mbti_type_esfp_description">Spontaneous, energetic and enthusiastic people – life is never boring around them.</string>
+
 
 </resources>
