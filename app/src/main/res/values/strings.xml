@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Axiduo</string>
+
+    <string name="all_type_button">16 TYPES</string>
+    <string name="possible_types">POSSIBLE TYPES</string>
+
+    <string name="start_button">Start</string>
+    <string name="back_button">Back</string>
+    <string name="reset_button">Reset</string>
+    <string name="result_button">Result</string>
+    <string name="close_button">Close</string>
+
+    <string name="not_found">Not Found</string>
+
+    <!-- LIST OF ANSWERS -->
+    <string name="mbti_strongly_agree">strongly agree</string>
+    <string name="mbti_agree">agree</string>
+    <string name="mbti_neutral">neutral</string>
+    <string name="mbti_disagree">disagree</string>
+    <string name="mbti_strongly_disagree">strongly disagree</string>
+
+
 </resources>
