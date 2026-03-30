@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.s1g1.axiduo.ui.graph.GridScreen
 import com.s1g1.axiduo.ui.graph.StartScreen
 
 object Routes {
@@ -30,6 +31,10 @@ fun MainNavGraph(
 
             composable(route=Routes.STARTSCREEN){
                 StartScreen(innerPadding = innerPadding, navController = navController)
+            }
+
+            composable(route=Routes.GRIDSCREEN){
+                GridScreen(innerPadding = innerPadding, navController = navController)
             }
         })
     }
