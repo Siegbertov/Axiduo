@@ -15,6 +15,7 @@ enum class AppLanguage(
     @DrawableRes val flag: Int,
 ){
     English(code = "en", fullName = "english", flag = R.drawable.en),
+    Russian(code = "ru", fullName = "русский", flag = R.drawable.ru),
     Ukrainian(code = "uk", fullName = "українська", flag = R.drawable.uk);
 
 
