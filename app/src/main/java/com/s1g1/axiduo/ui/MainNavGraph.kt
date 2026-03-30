@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.s1g1.axiduo.ui.graph.GridScreen
 import com.s1g1.axiduo.ui.graph.StartScreen
+import com.s1g1.axiduo.ui.graph.TestScreen
 import com.s1g1.axiduo.ui.graph.TypeScreen
 
 object Routes {
@@ -24,6 +25,7 @@ object Routes {
 @Composable
 fun MainNavGraph(
     modifier: Modifier = Modifier,
+    mbtiViewModel: MBTIViewModel
 ){
     val navController = rememberNavController()
 
@@ -38,6 +40,14 @@ fun MainNavGraph(
 
             composable(route=Routes.GRIDSCREEN){
                 GridScreen(innerPadding = innerPadding, navController = navController)
+            }
+
+            composable(route=Routes.TESTSCREEN){
+                TestScreen(
+                    innerPadding = innerPadding,
+                    navController = navController,
+                    mbtiViewModel = mbtiViewModel
+                )
             }
 
             composable(
