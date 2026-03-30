@@ -25,12 +25,17 @@ object Routes {
 @Composable
 fun MainNavGraph(
     modifier: Modifier = Modifier,
-    mbtiViewModel: MBTIViewModel
+    mbtiViewModel: MBTIViewModel,
+    isDarkTheme: Boolean,
+    onToggleTheme: ()->Unit,
 ){
     val navController = rememberNavController()
 
     Scaffold(
-        topBar= { AxiduoTopBar() }
+        topBar= { AxiduoTopBar(
+            isDarkTheme=isDarkTheme,
+            onToggleTheme = onToggleTheme,
+        ) }
     ){ innerPadding ->
         NavHost(navController=navController, startDestination= Routes.STARTSCREEN, builder={
 
