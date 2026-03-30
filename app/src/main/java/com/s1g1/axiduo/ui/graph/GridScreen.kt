@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.s1g1.axiduo.model.MBTIType
+import com.s1g1.axiduo.ui.Routes
 
 @Composable
 fun GridScreen(
@@ -35,7 +36,7 @@ fun GridScreen(
         ) {
             items(MBTIType.entries){ currentType ->
                 ElevatedButton(
-                    onClick = { /* TODO implement go to type screen */},
+                    onClick = { navController.navigate(Routes.TYPESCREEN+"/${currentType.typeName}") },
                     modifier = Modifier
                         .padding(10.dp)
                         .aspectRatio(1f)

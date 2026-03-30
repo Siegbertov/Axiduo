@@ -4,11 +4,14 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.s1g1.axiduo.ui.graph.GridScreen
 import com.s1g1.axiduo.ui.graph.StartScreen
+import com.s1g1.axiduo.ui.graph.TypeScreen
 
 object Routes {
     val STARTSCREEN = "start_screen"
@@ -36,6 +39,19 @@ fun MainNavGraph(
             composable(route=Routes.GRIDSCREEN){
                 GridScreen(innerPadding = innerPadding, navController = navController)
             }
+
+            composable(
+                route=Routes.TYPESCREEN+"/{typeString}",
+                arguments = listOf( navArgument(name="typeString"){type = NavType.StringType} )
+            ){ backstackEntry ->
+                backstackEntry.arguments?.let{
+                    TypeScreen(
+                        innerPadding = innerPadding,
+                        typeString = it.getString("typeString")
+                    )
+                }
+            }
+
         })
     }
 }
