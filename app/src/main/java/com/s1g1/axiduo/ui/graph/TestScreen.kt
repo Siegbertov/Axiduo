@@ -11,11 +11,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.selection.selectableGroup
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Restore
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -23,8 +28,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.RadioButtonDefaults
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -34,6 +44,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -69,6 +80,63 @@ fun TestScreen(
             mbtiViewModel = mbtiViewModel
         )
 
+        MBTITestScreenResultButton(
+            mbtiViewModel = mbtiViewModel,
+            onResultButtonPressed = { typeString ->
+                navController.navigate(Routes.TYPESCREEN+"/${typeString}")
+            }
+        )
+
+    }
+}
+
+@Composable
+fun MBTITestScreenResultButton(
+    mbtiViewModel: MBTIViewModel,
+    onResultButtonPressed: (String) -> Unit
+) {
+    var showDialog by rememberSaveable { mutableStateOf(false) }
+    var possibleTypes by rememberSaveable { mutableStateOf(listOf<String>()) }
+
+    Column {
+        Button(
+            onClick = {
+                val currentTypes = mbtiViewModel.getMBTITypes()
+                possibleTypes = currentTypes
+                if (possibleTypes.size == 1){onResultButtonPressed(possibleTypes[0])} else {showDialog=true}
+            },
+            shape = RoundedCornerShape(bottomStart = 16.dp,bottomEnd = 16.dp),
+            modifier = Modifier.fillMaxWidth(),
+            enabled = mbtiViewModel.percentage == 100,
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Green.copy(green=0.5f))
+        ) {
+            Text(
+                text=if (mbtiViewModel.percentage == 100) stringResource(R.string.result_button) else "${mbtiViewModel.percentage}%",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
+        if (showDialog) {
+            AlertDialog(
+                onDismissRequest = { showDialog = false },
+                title = { Text(stringResource(R.string.possible_types)) },
+                text = {
+                    LazyColumn {
+                        items(possibleTypes) { type ->
+                            TextButton(onClick = {
+                                showDialog = false
+                                onResultButtonPressed(type)
+                            }) {
+                                Text(text = type)
+                            }
+                        }
+                    }
+                },
+                confirmButton = {
+                    TextButton(onClick = { showDialog = false }) { Text(stringResource(R.string.close_button)) }
+                }
+            )
+        }
     }
 }
 
@@ -84,9 +152,9 @@ fun MBTITestList(
 
             QuestionItem(
                 question = question,
-                answer = mbtiViewModel.getCurrentAnswer(qID + 1),
+                answer = mbtiViewModel.getCurrentAnswer(questionId = qID+1),
                 isExpanded = isExpanded,
-                onToggle = { mbtiViewModel.toggleExpanded(qID + 1) },
+                onToggle = { mbtiViewModel.toggleExpanded(questionId = qID+1) },
                 onAnswerSelected = {newAnswer -> mbtiViewModel.onAnswerSelected(questionId = qID+1, updatedAnswer = newAnswer)}
             )
             HorizontalDivider()

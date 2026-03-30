@@ -12,7 +12,7 @@ class MBTIViewModel : ViewModel() {
     /* ---------- ALL ANSWERS INITIALLY SET TO NEUTRAL ---------- */
     private var _answers = mutableStateMapOf<Int, Answer>().apply {
         questionMap.values.forEach { question ->
-            put(question.ordinal, Answer.Neutral)
+            put(question.id, Answer.Neutral)
         }
     }
 
@@ -38,7 +38,7 @@ class MBTIViewModel : ViewModel() {
         _answers.clear()
         _answers = mutableStateMapOf<Int, Answer>().apply {
             questionMap.values.forEach { question ->
-                put(question.ordinal, Answer.Neutral)
+                put(question.id, Answer.Neutral)
             }
         }
     }
