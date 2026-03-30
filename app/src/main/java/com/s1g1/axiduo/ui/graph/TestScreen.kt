@@ -1,26 +1,46 @@
 package com.s1g1.axiduo.ui.graph
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Restore
 import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.RadioButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.s1g1.axiduo.R
+import com.s1g1.axiduo.model.Answer
+import com.s1g1.axiduo.model.Question
 import com.s1g1.axiduo.ui.MBTIViewModel
 import com.s1g1.axiduo.ui.Routes
 import kotlinx.coroutines.launch
@@ -39,9 +59,103 @@ fun TestScreen(
 
         MBTITestScreenResetButton(
             modifier = Modifier.fillMaxWidth().padding(20.dp),
-            onResetButtonPressed = {mbtiViewModel.reset()},
-            listState = listState
+            listState = listState,
+            onResetButtonPressed = {mbtiViewModel.reset()}
         )
+
+        MBTITestList(
+            modifier = Modifier.weight(1f),
+            listState = listState,
+            mbtiViewModel = mbtiViewModel
+        )
+
+    }
+}
+
+@Composable
+fun MBTITestList(
+    modifier: Modifier,
+    listState: LazyListState,
+    mbtiViewModel: MBTIViewModel
+) {
+    LazyColumn(state = listState, modifier=modifier) {
+        itemsIndexed(mbtiViewModel.questionMap.values.toList()) { qID, question ->
+            val isExpanded = mbtiViewModel.isExpanded(question)
+
+            QuestionItem(
+                question = question,
+                answer = mbtiViewModel.getCurrentAnswer(qID + 1),
+                isExpanded = isExpanded,
+                onToggle = { mbtiViewModel.toggleExpanded(qID + 1) },
+                onAnswerSelected = {newAnswer -> mbtiViewModel.onAnswerSelected(questionId = qID+1, updatedAnswer = newAnswer)}
+            )
+            HorizontalDivider()
+        }
+    }
+}
+
+@Composable
+fun QuestionItem(
+    question: Question,
+    answer: Answer?,
+    isExpanded: Boolean,
+    onToggle: () -> Unit,
+    onAnswerSelected: (Answer) -> Unit
+) {
+    Column(modifier = Modifier.padding(16.dp)){
+        Text(
+            text =  "${question.id}. ${stringResource(question.sentence)}",
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+                .clickable { onToggle() },
+            style = MaterialTheme.typography.titleMedium
+        )
+        answer?.let{
+            if(!isExpanded){
+                Text(
+                    text = stringResource(answer.choice),
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp),
+                    fontStyle = FontStyle.Italic,
+                    style = TextStyle(
+                        shadow = Shadow(
+                            color = Color.Black.copy(alpha = 0.9f),
+                            offset = Offset(2f, 2f),
+                            blurRadius = 4f
+                        )
+                    ),
+                    color = answer.color
+                )
+            }
+        }
+
+        AnimatedVisibility(visible = isExpanded) {
+            LazyRow(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .selectableGroup(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                itemsIndexed(Answer.entries){ _, currentPressedRB ->
+                    RadioButton(
+                        selected = (answer == currentPressedRB),
+                        onClick = {
+                            println("New answer is - $currentPressedRB")
+                            onAnswerSelected(currentPressedRB)
+                        },
+                        colors = RadioButtonDefaults.colors(
+                            selectedColor = currentPressedRB.color,
+                            unselectedColor = Color.Gray
+                        )
+
+                    )
+                }
+            }
+        }
     }
 }
 
