@@ -6,46 +6,15 @@
     <string name="start_button">Начать</string>
     <string name="back_button">Назад</string>
     <string name="result_button">Результат</string>
+    <string name="reset_button">Cброс</string>
     <string name="close_button">Закрыть</string>
     <string name="not_found">Не найдено</string>
+
     <string name="mbti_strongly_agree">полностью согласен/-а</string>
     <string name="mbti_agree">согласен/-а</string>
     <string name="mbti_neutral">нейтральный/-а</string>
     <string name="mbti_disagree">не согласен/-а</string>
     <string name="mbti_strongly_disagree">полностью не  согласен/-а</string>
-    <string name="mbti_type_intj_nickname">Архитектор</string>
-    <string name="mbti_type_intj_description">Мыслители с богатым воображением и стратегическим мышлением, у которых на все есть план.</string>
-    <string name="mbti_type_intp_nickname">Логик</string>
-    <string name="mbti_type_intp_description">Изобретатели-новаторы с неутолимой жаждой знаний.</string>
-    <string name="mbti_type_entj_nickname">Командир</string>
-    <string name="mbti_type_entj_description">Смелые, изобретательные и волевые лидеры, всегда находящие выход из ситуации – или создающие его.</string>
-    <string name="mbti_type_entp_nickname">Дебатер</string>
-    <string name="mbti_type_entp_description">Умные и любознательные мыслители, не способные устоять перед интеллектуальным вызовом.</string>
-    <string name="mbti_type_infj_nickname">Адвокат</string>
-    <string name="mbti_type_infj_description">Тихие и мистические, но при этом очень вдохновляющие и неутомимые идеалисты.</string>
-    <string name="mbti_type_infp_nickname">Медиатор</string>
-    <string name="mbti_type_infp_description">Поэтичные, добрые и альтруистичные люди, всегда готовые помочь благому делу.</string>
-    <string name="mbti_type_enfj_nickname">Протагонист</string>
-    <string name="mbti_type_enfj_description">Харизматичные и вдохновляющие лидеры, способные очаровать своих слушателей.</string>
-    <string name="mbti_type_enfp_nickname">Активист</string>
-    <string name="mbti_type_enfp_description">Энергичные, творческие и общительные свободные духом люди, которые всегда найдут повод улыбнуться.</string>
-    <string name="mbti_type_istj_nickname">Логист</string>
-    <string name="mbti_type_istj_description">Практичные и ориентированные на факты люди, чья надежность не вызывает сомнений.</string>
-    <string name="mbti_type_isfj_nickname">Защитник</string>
-    <string name="mbti_type_isfj_description">Очень преданные и сердечные защитники, всегда готовые защитить своих близких.</string>
-    <string name="mbti_type_estj_nickname">Руководитель</string>
-    <string name="mbti_type_estj_description">Превосходные администраторы, непревзойденные в управлении делами – или людьми.</string>
-    <string name="mbti_type_esfj_nickname">Консул</string>
-    <string name="mbti_type_esfj_description">Невероятно заботливые, общительные и популярные люди, всегда готовые помочь.</string>
-    <string name="mbti_type_istp_nickname">Виртуоз</string>
-    <string name="mbti_type_istp_description">Смелые и практичные экспериментаторы, мастера владения всевозможными инструментами.</string>
-    <string name="mbti_type_isfp_nickname">Авантюрист</string>
-    <string name="mbti_type_isfp_description">Гибкие и обаятельные художники, всегда готовые к новым открытиям и экспериментам.</string>
-    <string name="mbti_type_estp_nickname">Предприниматель</string>
-    <string name="mbti_type_estp_description">Умные, энергичные и очень проницательные люди, которые по-настоящему любят жить на грани.</string>
-    <string name="mbti_type_esfp_nickname">Артист</string>
-    <string name="reset_button">Cброс</string>
-    <string name="mbti_type_esfp_description">Эти люди спонтанны, энергичны и полны энтузиазма – жизнь рядом с ними никогда не бывает скучной.</string>
 
     <string name="mbti_question_1">Вы регулярно заводите новых друзей.</string>
     <string name="mbti_question_2">Сложные и новые идеи вдохновляют вас больше, чем простые и понятные.</string>
@@ -107,4 +76,74 @@
     <string name="mbti_question_58">При принятии решений вы скорее полагаетесь на эмоциональную интуицию, чем на логическое мышление.</string>
     <string name="mbti_question_59">Вам сложно справляться с дедлайнами.</string>
     <string name="mbti_question_60">Вы уверены, что у вас все получится.</string>
+
+    <string name="mbti_type_intj_nickname">Архитектор</string>
+    <string name="mbti_type_intp_nickname">Логик</string>
+    <string name="mbti_type_entj_nickname">Командир</string>
+    <string name="mbti_type_entp_nickname">Дебатер</string>
+    <string name="mbti_type_infj_nickname">Адвокат</string>
+    <string name="mbti_type_infp_nickname">Медиатор</string>
+    <string name="mbti_type_enfj_nickname">Протагонист</string>
+    <string name="mbti_type_enfp_nickname">Активист</string>
+    <string name="mbti_type_istj_nickname">Логист</string>
+    <string name="mbti_type_isfj_nickname">Защитник</string>
+    <string name="mbti_type_estj_nickname">Руководитель</string>
+    <string name="mbti_type_esfj_nickname">Консул</string>
+    <string name="mbti_type_istp_nickname">Виртуоз</string>
+    <string name="mbti_type_isfp_nickname">Авантюрист</string>
+    <string name="mbti_type_estp_nickname">Предприниматель</string>
+    <string name="mbti_type_esfp_nickname">Артист</string>
+
+
+
+    <string name="mbti_type_intj_description">
+        "Мыслители с богатым воображением и стратегическим мышлением, у которых на все есть план.\n\nINTJ — это аналитически мыслящие люди, стремящиеся улучшать системы и процессы с помощью своих инновационных идей. Они обладают талантом видеть возможности для совершенствования, будь то на работе, дома или в себе самих."
+    </string>
+    <string name="mbti_type_intp_description">
+        "Изобретатели-новаторы с неутолимой жаждой знаний.\n\nINTP — это философские новаторы, увлеченные логическим анализом, системами и проектированием. Они озабочены теорией и ищут универсальный закон, лежащий в основе всего, что видят. Они стремятся понять объединяющие темы жизни во всей их сложности."
+    </string>
+    <string name="mbti_type_entj_description">
+        "Смелые, изобретательные и волевые лидеры, всегда находящие выход из ситуации – или создающие его.\n\nENTJ — это стратегические лидеры, стремящиеся к организации перемен. Они быстро выявляют неэффективность и разрабатывают новые решения, а также с удовольствием создают долгосрочные планы для достижения своих целей. Они превосходно владеют логическим мышлением, обычно красноречивы и остроумны."
+    </string>
+    <string name="mbti_type_entp_description">
+        "Умные и любознательные мыслители, не способные устоять перед интеллектуальным вызовом.\n\nENTP — это вдохновенные новаторы, стремящиеся находить новые решения сложных интеллектуальных проблем. Они любопытны и умны, и стремятся понять людей, системы и принципы, которые их окружают."
+    </string>
+    <string name="mbti_type_infj_description">
+        "Тихие и мистические, но при этом очень вдохновляющие и неутомимые идеалисты.\n\nINFJ — это творческие, заботливые люди с сильным чувством личной целостности и стремлением помочь другим раскрыть свой потенциал. Креативные и целеустремленные, они обладают талантом находить оригинальные решения личных проблем, помогая другим."
+    </string>
+    <string name="mbti_type_infp_description">
+        "Поэтичные, добрые и альтруистичные люди, всегда готовые помочь благому делу.\n\nINFP — это идеалисты с богатым воображением, руководствующиеся собственными ценностями и убеждениями. Для Целителя возможности имеют первостепенное значение; реальность момента имеет лишь мимолетное значение. Они видят потенциал для лучшего будущего и стремятся к истине и смыслу со своим собственным стилем."
+    </string>
+    <string name="mbti_type_enfj_description">
+        "Харизматичные и вдохновляющие лидеры, способные очаровать своих слушателей.\n\nENFJ — это идеалисты-организаторы, стремящиеся воплотить в жизнь своё видение того, что лучше для человечества. Они часто выступают катализаторами личностного роста благодаря своей способности видеть потенциал в других людях и харизме, позволяющей убеждать окружающих в своих идеях."
+    </string>
+    <string name="mbti_type_enfp_description">
+        "Энергичные, творческие и общительные свободные духом люди, которые всегда найдут повод улыбнуться.\n\nENFP — это творцы, ориентированные на людей, сосредоточенные на возможностях и обладающие заразительным энтузиазмом к новым идеям, людям и видам деятельности. Энергичные, доброжелательные и увлеченные, ENFP любят помогать другим людям раскрывать свой творческий потенциал."
+    </string>
+    <string name="mbti_type_istj_description">
+        "Практичные и ориентированные на факты люди, чья надежность не вызывает сомнений.\n\nISTJ — ответственные организаторы, стремящиеся создавать и поддерживать порядок в системах и учреждениях. Они аккуратны и организованы, как внутри, так и снаружи, и, как правило, имеют четкий алгоритм действий для всего, что они делают."
+    </string>
+    <string name="mbti_type_isfj_description">
+        "Очень преданные и сердечные защитники, всегда готовые защитить своих близких.\n\nISFJ — это трудолюбивые заботливые люди, верные традициям и организациям. Они практичны, сострадательны и внимательны, и стремятся помогать другим и защищать их от опасностей жизни."
+    </string>
+    <string name="mbti_type_estj_description">
+        "Превосходные администраторы, непревзойденные в управлении делами – или людьми.\n\nESTJ — трудолюбивые традиционалисты, стремящиеся взять на себя инициативу в организации проектов и работе с людьми. Аккуратные, соблюдающие правила и добросовестные, ESTJ любят доводить дела до конца и, как правило, подходят к проектам систематически и методично."
+    </string>
+    <string name="mbti_type_esfj_description">
+        "Невероятно заботливые, общительные и популярные люди, всегда готовые помочь.\n\nESFJ — это добросовестные помощники, чуткие к потребностям других и энергично преданные своим обязанностям. Они очень восприимчивы к эмоциональному окружению и внимательны как к чувствам других, так и к тому, как другие воспринимают их."
+    </string>
+    <string name="mbti_type_istp_description">
+        "Смелые и практичные экспериментаторы, мастера владения всевозможными инструментами.\n\nISTP — это наблюдательные мастера, обладающие пониманием механики и интересом к поиску и устранению неисправностей. Они подходят к окружающей среде с гибкой логикой, ища практические решения возникающих проблем."
+    </string>
+    <string name="mbti_type_isfp_description">
+        "Гибкие и обаятельные художники, всегда готовые к новым открытиям и экспериментам.\n\nISFP — это нежные, заботливые люди, живущие настоящим моментом и наслаждающиеся окружающим миром с жизнерадостным, сдержанным энтузиазмом. Они гибкие и спонтанные, любят плыть по течению и наслаждаться тем, что предлагает жизнь."
+    </string>
+    <string name="mbti_type_estp_description">
+        "Умные, энергичные и очень проницательные люди, которые по-настоящему любят жить на грани.\n\nESTP — это энергичные любители острых ощущений, которые лучше всего проявляют себя, когда решают проблемы, как буквальные, так и метафорические. Они привносят ощущение динамичной энергии во взаимодействие с другими людьми и окружающим миром."
+    </string>
+    <string name="mbti_type_esfp_description">
+        "Эти люди спонтанны, энергичны и полны энтузиазма – жизнь рядом с ними никогда не бывает скучной.\n\nESFPs are vivacious entertainers who charm and engage those around them. They are spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes, nature, animals, and especially people"
+    </string>
+
+
 </resources>
