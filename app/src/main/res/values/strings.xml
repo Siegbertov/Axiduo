@@ -81,54 +81,72 @@
     <string name="mbti_question_59">You struggle with deadlines.</string>
     <string name="mbti_question_60">You feel confident that things will work out for you.</string>
 
-    <!-- LIST OF TYPE (NAME+NICKNAME NAME+DESCRIPTION) -->
+    <!-- LIST OF TYPE (NAME+NICKNAME) -->
     <string name="mbti_type_intj_nickname">Architect</string>
-    <string name="mbti_type_intj_description">Imaginative and strategic thinkers, with a plan for everything.</string>
-
     <string name="mbti_type_intp_nickname">Logician</string>
-    <string name="mbti_type_intp_description">Innovative inventors with an unquenchable thirst for knowledge.</string>
-
     <string name="mbti_type_entj_nickname">Commander</string>
-    <string name="mbti_type_entj_description">Bold, imaginative and strong-willed leaders, always finding a way – or making one.</string>
-
     <string name="mbti_type_entp_nickname">Debater</string>
-    <string name="mbti_type_entp_description">Smart and curious thinkers who cannot resist an intellectual challenge.</string>
-
     <string name="mbti_type_infj_nickname">Advocate</string>
-    <string name="mbti_type_infj_description">Quiet and mystical, yet very inspiring and tireless idealists.</string>
-
     <string name="mbti_type_infp_nickname">Mediator</string>
-    <string name="mbti_type_infp_description">Poetic, kind and altruistic people, always eager to help a good cause.</string>
-
     <string name="mbti_type_enfj_nickname">Protagonist</string>
-    <string name="mbti_type_enfj_description">Charismatic and inspiring leaders, able to mesmerize their listeners.</string>
-
     <string name="mbti_type_enfp_nickname">Campaigner</string>
-    <string name="mbti_type_enfp_description">Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.</string>
-
     <string name="mbti_type_istj_nickname">Logistician</string>
-    <string name="mbti_type_istj_description">Practical and fact-minded individuals, whose reliability cannot be doubted.</string>
-
     <string name="mbti_type_isfj_nickname">Defender</string>
-    <string name="mbti_type_isfj_description">Very dedicated and warm protectors, always ready to defend their loved ones.</string>
-
     <string name="mbti_type_estj_nickname">Executive</string>
-    <string name="mbti_type_estj_description">Excellent administrators, unsurpassed at managing things – or people.</string>
-
     <string name="mbti_type_esfj_nickname">Consul</string>
-    <string name="mbti_type_esfj_description">Extraordinarily caring, social and popular people, always eager to help.</string>
-
     <string name="mbti_type_istp_nickname">Virtuoso</string>
-    <string name="mbti_type_istp_description">Bold and practical experimenters, masters of all kinds of tools.</string>
-
     <string name="mbti_type_isfp_nickname">Adventurer</string>
-    <string name="mbti_type_isfp_description">Flexible and charming artists, always ready to explore and experience something new.</string>
-
     <string name="mbti_type_estp_nickname">Entrepreneur</string>
-    <string name="mbti_type_estp_description">Smart, energetic and very perceptive people, who truly enjoy living on the edge.</string>
-
     <string name="mbti_type_esfp_nickname">Entertainer</string>
-    <string name="mbti_type_esfp_description">Spontaneous, energetic and enthusiastic people – life is never boring around them.</string>
 
+    <!-- LIST OF TYPE (NAME+DESCRIPTION) -->
+    <string name="mbti_type_intj_description">
+        "Imaginative and strategic thinkers, with a plan for everything.\n\nINTJs are analytical problem-solvers, eager to improve systems and processes with their innovative ideas. They have a talent for seeing possibilities for improvement, whether at work, at home, or in themselves."
+    </string>
+    <string name="mbti_type_intp_description">
+        "Innovative inventors with an unquenchable thirst for knowledge.\n\nINTPs are philosophical innovators, fascinated by logical analysis, systems, and design. They are preoccupied with theory, and search for the universal law behind everything they see. They want to understand the unifying themes of life, in all their complexity."
+    </string>
+    <string name="mbti_type_entj_description">
+        "Bold, imaginative and strong-willed leaders, always finding a way – or making one.\n\nENTJs are strategic leaders, motivated to organize change. They are quick to see inefficiency and conceptualize new solutions, and enjoy developing long-range plans to accomplish their vision. They excel at logical reasoning and are usually articulate and quick-witted."
+    </string>
+    <string name="mbti_type_entp_description">
+        "Smart and curious thinkers who cannot resist an intellectual challenge.\n\nENTPs are inspired innovators, motivated to find new solutions to intellectually challenging problems. They are curious and clever, and seek to comprehend the people, systems, and principles that surround them."
+    </string>
+    <string name="mbti_type_infj_description">
+        "Quiet and mystical, yet very inspiring and tireless idealists.\n\nINFJs are creative nurturers with a strong sense of personal integrity and a drive to help others realize their potential. Creative and dedicated, they have a talent for helping others with original solutions to their personal challenges"
+    </string>
+    <string name="mbti_type_infp_description">
+        "Poetic, kind and altruistic people, always eager to help a good cause.\n\nINFPs are imaginative idealists, guided by their own core values and beliefs. To a Healer, possibilities are paramount; the reality of the moment is only of passing concern. They see potential for a better future, and pursue truth and meaning with their own flair."
+    </string>
+    <string name="mbti_type_enfj_description">
+        "Charismatic and inspiring leaders, able to mesmerize their listeners.\n\nENFJs are idealist organizers, driven to implement their vision of what is best for humanity. They often act as catalysts for human growth because of their ability to see potential in other people and their charisma in persuading others to their ideas."
+    </string>
+    <string name="mbti_type_enfp_description">
+        "Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.\n\nENFPs are people-centered creators with a focus on possibilities and a contagious enthusiasm for new ideas, people and activities. Energetic, warm, and passionate, ENFPs love to help other people explore their creative potential."
+    </string>
+    <string name="mbti_type_istj_description">
+        "Practical and fact-minded individuals, whose reliability cannot be doubted.\n\nISTJs are responsible organizers, driven to create and enforce order within systems and institutions. They are neat and orderly, inside and out, and tend to have a procedure for everything they do."
+    </string>
+    <string name="mbti_type_isfj_description">
+        "Very dedicated and warm protectors, always ready to defend their loved ones.\n\nISFJs are industrious caretakers, loyal to traditions and organizations. They are practical, compassionate, and caring, and are motivated to provide for others and protect them from the perils of life."
+    </string>
+    <string name="mbti_type_estj_description">
+        "Excellent administrators, unsurpassed at managing things – or people.\n\nESTJs are hardworking traditionalists, eager to take charge in organizing projects and people. Orderly, rule-abiding, and conscientious, ESTJs like to get things done, and tend to go about projects in a systematic, methodical way."
+    </string>
+    <string name="mbti_type_esfj_description">
+        "Extraordinarily caring, social and popular people, always eager to help.\n\nESFJs are conscientious helpers, sensitive to the needs of others and energetically dedicated to their responsibilities. They are highly attuned to their emotional environment and attentive to both the feelings of others and the perception others have of them."
+    </string>
+    <string name="mbti_type_istp_description">
+        "Bold and practical experimenters, masters of all kinds of tools.\n\nISTPs are observant artisans with an understanding of mechanics and an interest in troubleshooting. They approach their environments with a flexible logic, looking for practical solutions to the problems at hand."
+    </string>
+    <string name="mbti_type_isfp_description">
+        "Flexible and charming artists, always ready to explore and experience something new.\n\nISFPs are gentle caretakers who live in the present moment and enjoy their surroundings with cheerful, low-key enthusiasm. They are flexible and spontaneous, and like to go with the flow to enjoy what life has to offer."
+    </string>
+    <string name="mbti_type_estp_description">
+        "Smart, energetic and very perceptive people, who truly enjoy living on the edge.\n\nESTPs are energetic thrillseekers who are at their best when putting out fires, whether literal or metaphorical. They bring a sense of dynamic energy to their interactions with others and the world around them."
+    </string>
+    <string name="mbti_type_esfp_description">
+        "Spontaneous, energetic and enthusiastic people – life is never boring around them.\n\nESFPs are vivacious entertainers who charm and engage those around them. They are spontaneous, energetic, and fun-loving, and take pleasure in the things around them: food, clothes, nature, animals, and especially people."
+    </string>
 
 </resources>
